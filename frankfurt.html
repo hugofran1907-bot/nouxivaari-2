@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<!DOCTYPE html><html class="light" lang="es" style="overflow-x: hidden;"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Frankfurts &amp; Bocadillos - NOU XIVARRI</title>
@@ -111,7 +111,7 @@
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
 <!-- TopNavBar (Shared Component) -->
-<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50">
+<header class="overflow-x-hidden bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50">
 <div class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
 <div class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" style="color: rgb(212, 175, 55);">
                 NOU XIVARRI
@@ -129,7 +129,7 @@
 <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-opacity duration-300 z-30" onclick="closeSidebar()"></div>
 
 <!-- Sidebar -->
-<aside id="sidebar" class="fixed top-0 right-0 h-screen w-80 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+<aside id="sidebar" class="fixed top-0 right-0 h-screen w-64 sm:w-72 md:w-80 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
 <div class="p-6 border-b border-outline/10 flex justify-between items-center sticky top-0 bg-surface">
 <h2 class="font-headline-md text-headline-md text-primary">Menú</h2>
 <button onclick="closeSidebar()" class="text-primary cursor-pointer hover:opacity-70">
