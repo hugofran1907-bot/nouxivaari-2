@@ -171,11 +171,11 @@
 <!-- TopNavBar -->
 <header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md docked full-width top-0 sticky border-b border-outline/10 z-50">
 <div class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
-<a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#">NOU XIVARRI</a>
+<a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#" style="color: rgb(212, 175, 55);">NOU XIVARRI</a>
 
 
 <button id="menu-toggle" class="text-primary cursor-pointer hover:opacity-70">
-<span class="material-symbols-outlined text-3xl">menu</span>
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">menu</span>
 </button>
 </div>
 </header>
@@ -206,7 +206,6 @@
 </div>
 </aside>
 
-
 <main class="max-w-7xl mx-auto px-margin py-xl min-h-screen">
 <!-- Header Section -->
 <section class="mb-xl text-center md:text-left">
@@ -217,7 +216,7 @@
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
 <!-- Map Card (Large) -->
 <div class="md:col-span-8 bg-surface-container rounded-xl overflow-hidden relative min-h-[400px]">
-<img alt="Map of Cambrils" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply" data-location="Cambrils, Spain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACFNTPNCLxOaTN48eTdRqcu6GGvTh6sZbMZGddUwvBEvT3IGIyKuotCNL2ASdn4kJ2ypnPummQ0Ahw8ZBx8w5DnHScLF0hC1smZkNqxO_OlbRe1jzIPL1JK8_RMr1KikgESXjukofBOlk10LTIDsUGn4euGZqQ96CdFU13gpxN9wgKV5UiQnDK8ZmgKMv1clOY_XUu15Twqmjj5scpLmXtPJ0JgVFi8poM2ObjCZrT6Pf01l-1hDLD3A">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQABOklx7wdGQW3NCF3Se3-hVIxULmvMxVH25tESs_ZFjEvsrjdKJO6P3T7kklRaPc8yHm4elIcF3DgOvHqiLGbtP-rzU6VPtVVrSgH6l63nzhfkxj6R3o56Rza2XKQIApbCT07cnq8Z7mbOi5QIPQuV35puggbazv1zRaU6fkWsXqHFSC9uehxGpR3Q_dmqoQS_H4nItm7cBTxT2jQrv2K0_X4QsVGyfWEPxfU86eLtF_7t_9AYnzWVQ46_kS7_-emU8" alt="Map of Cambrils" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply">
 <div class="absolute inset-0 bg-gradient-to-t from-surface-container/90 to-transparent p-lg flex flex-col justify-end">
 <h2 class="font-headline-md text-headline-md mb-xs text-primary">Ubicación</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant flex items-center gap-sm">
@@ -248,20 +247,48 @@
 </div>
 </div>
 <!-- Opening Hours (Medium) -->
-<div class="md:col-span-12 lg:col-span-8 lg:col-start-3 bg-surface-container-low rounded-xl p-lg border border-outline/10">
-<h3 class="font-headline-sm text-headline-sm mb-lg flex items-center gap-sm text-primary">
-<span class="material-symbols-outlined">schedule</span>
-                    Horarios
-                </h3>
-<ul class="font-body-md text-body-md text-on-surface-variant space-y-sm">
-<li class="flex justify-between border-b border-outline/10 pb-xs"><span class="">Lunes</span> <span class="">Cerrado</span></li>
-<li class="flex justify-between border-b border-outline/10 pb-xs"><span class="">Martes</span> <span class="">19:00 - 23:30</span></li>
-<li class="flex justify-between border-b border-outline/10 pb-xs"><span class="">Miércoles</span> <span class="">19:00 - 23:30</span></li>
-<li class="flex justify-between border-b border-outline/10 pb-xs"><span class="">Jueves</span> <span class="">19:00 - 23:30</span></li>
-<li class="flex justify-between border-b border-outline/10 pb-xs"><span class="">Viernes</span> <span class="">19:00 - 00:00</span></li>
-<li class="flex justify-between border-b border-outline/10 pb-xs"><span class="">Sábado</span> <span class="">13:00 - 16:00, 19:00 - 00:00</span></li>
-<li class="flex justify-between"><span class="">Domingo</span> <span class="">13:00 - 16:00, 19:00 - 23:30</span></li>
-</ul>
+<div class="md:col-span-12 lg:col-span-8 lg:col-start-3 bg-surface-container-low rounded-xl p-lg md:p-xl border border-outline/10">
+  <div class="flex flex-col items-center text-center mb-lg">
+    <span class="material-symbols-outlined text-primary text-3xl mb-sm">schedule</span>
+    <h3 class="font-display-lg text-headline-md md:text-headline-lg text-primary tracking-tight">Horarios de Apertura</h3>
+    <p class="font-body-md text-on-surface-variant opacity-80">Ven a disfrutar de la mejor gastronomía en Cambrils</p>
+  </div>
+  <ul class="font-body-lg text-body-lg max-w-2xl mx-auto space-y-0">
+    <li class="flex justify-between items-center py-4 border-b border-outline/10">
+      <span class="font-bold text-on-surface-variant opacity-60">Lunes</span>
+      <span class="text-on-surface-variant opacity-40 italic">Cerrado por descanso</span>
+    </li>
+    <li class="flex justify-between items-center py-4 border-b border-outline/10">
+      <span class="font-bold text-primary">Martes</span>
+      <span class="text-on-background">19:00 - 23:30</span>
+    </li>
+    <li class="flex justify-between items-center py-4 border-b border-outline/10">
+      <span class="font-bold text-primary">Miércoles</span>
+      <span class="text-on-background">19:00 - 23:30</span>
+    </li>
+    <li class="flex justify-between items-center py-4 border-b border-outline/10">
+      <span class="font-bold text-primary">Jueves</span>
+      <span class="text-on-background">19:00 - 23:30</span>
+    </li>
+    <li class="flex justify-between items-center py-4 border-b border-outline/10">
+      <span class="font-bold text-primary">Viernes</span>
+      <span class="text-on-background">19:00 - 00:00</span>
+    </li>
+    <li class="flex justify-between items-center py-4 border-b border-outline/10">
+      <span class="font-bold text-primary">Sábado</span>
+      <div class="text-right">
+        <div class="text-on-background">13:00 - 16:00</div>
+        <div class="text-on-background">19:00 - 00:00</div>
+      </div>
+    </li>
+    <li class="flex justify-between items-center py-4">
+      <span class="font-bold text-primary">Domingo</span>
+      <div class="text-right">
+        <div class="text-on-background">13:00 - 16:00</div>
+        <div class="text-on-background">19:00 - 23:30</div>
+      </div>
+    </li>
+  </ul>
 </div>
 </div>
 <!-- FAQ Section -->
@@ -271,6 +298,14 @@
 <footer class="bg-surface-container dark:bg-surface-container-highest full-width rounded-t-lg bg-surface-container-low dark:bg-surface-container-highest mt-xl">
 
 </footer>
+
+
+
+
+
+
+
+
 
 
 
