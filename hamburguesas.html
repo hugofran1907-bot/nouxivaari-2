@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="light" lang="es" style="overflow-x: hidden; width: 100%; max-width: 100vw;"><head>
+<!DOCTYPE html><html class="light" lang="es"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Hamburguesas Artesanales - NOU XIVARRI</title>
@@ -168,119 +168,93 @@
         }
     </script>
 </head>
-<body style="width: 100%; max-width: 100vw; overflow-x: hidden; overflow-y: auto;" class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md selection:bg-tertiary selection:text-on-tertiary">
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md selection:bg-tertiary selection:text-on-tertiary">
 <!-- TopNavBar -->
-<header class="overflow-x-hidden bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50 border-b border-outline/10">
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50 border-b border-outline/10">
 <nav class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
-<a class="font-bold text-base sm:text-lg md:text-xl text-primary dark:text-primary-fixed-dim tracking-tight" href="#" style="color: rgb(212, 175, 55);">NOU XIVARRI</a>
+<a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#">NOU XIVARRI</a>
 
 
-<button id="menu-toggle" class="text-primary cursor-pointer hover:opacity-70">
-<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">menu</span>
+<button class="text-primary">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </nav>
 </header>
-
-<!-- Sidebar Overlay -->
-<div id="sidebar-overlay" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-opacity duration-300 z-30" onclick="closeSidebar()"></div>
-
-<!-- Sidebar -->
-<aside id="sidebar" class="fixed top-0 right-0 h-screen w-64 sm:w-72 md:w-80 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto overflow-x-hidden" style="overflow-x: hidden; max-width: 100vw;">
-<div class="p-3 sm:p-4 md:p-6 border-b border-outline/10 flex justify-between items-center sticky top-0 bg-surface">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-primary">Menú</h2>
-<button onclick="closeSidebar()" class="text-primary cursor-pointer hover:opacity-70">
-<span class="material-symbols-outlined">close</span>
-</button>
-</div>
-<nav class="p-3 sm:p-4 md:p-6 space-y-3">
-<a href="index.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Inicio</a>
-<a href="frankfurt.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Frankfurts</a>
-<a href="hamburguesas.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Hamburguesas</a>
-<a href="tapas.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Tapas</a>
-<a href="ensaladas.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Ensaladas</a>
-<a href="cerveza.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Cervezas</a>
-<a href="contacto.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Contacto</a>
-</nav>
-<div class="p-3 sm:p-4 md:p-6 border-t border-outline/10 space-y-3 mt-auto">
-<a href="tel:977217333" class="block font-normal text-sm sm:text-base text-primary hover:opacity-80 transition-opacity py-2 px-4">📞 977 21 73 33</a>
-</div>
-</aside>
-
 <!-- Main Content -->
-<main class="flex-grow w-full max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-margin py-4 sm:py-6 md:py-xl flex flex-col gap-xl">
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin py-xl flex flex-col gap-xl">
 <!-- Hero Section -->
 <section class="flex flex-col items-center text-center gap-base max-w-3xl mx-auto mt-lg">
 <h1 class="font-display-lg text-display-lg text-on-surface">Hamburguesas</h1>
 
 </section>
 <!-- Menu Grid -->
-<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-gutter mt-lg">
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-lg">
 <!-- Hamburguesa de ternera -->
 <article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
 <div class="p-lg flex flex-col gap-sm flex-grow justify-center">
-<div class="flex justify-between items-center gap-2 sm:gap-3 md:gap-md">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-on-surface">Hamburguesa de ternera</h2>
-<span class="font-medium text-xs sm:text-sm md:text-base text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa de ternera</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
 </div>
 </div>
 </article>
 <!-- Hamburguesa de pollo -->
 <article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
 <div class="p-lg flex flex-col gap-sm flex-grow justify-center">
-<div class="flex justify-between items-center gap-2 sm:gap-3 md:gap-md">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-on-surface">Hamburguesa de pollo</h2>
-<span class="font-medium text-xs sm:text-sm md:text-base text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa de pollo</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
 </div>
 </div>
 </article>
 <!-- Hamburguesa picante -->
 <article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
 <div class="p-lg flex flex-col gap-sm flex-grow justify-center">
-<div class="flex justify-between items-center gap-2 sm:gap-3 md:gap-md">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-on-surface">Hamburguesa picante</h2>
-<span class="font-medium text-xs sm:text-sm md:text-base text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa picante</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
 </div>
 </div>
 </article>
 <!-- Hamburguesa vegana -->
 <article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
 <div class="p-lg flex flex-col gap-sm flex-grow justify-center">
-<div class="flex justify-between items-center gap-2 sm:gap-3 md:gap-md">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-on-surface">Hamburguesa vegana</h2>
-<span class="font-medium text-xs sm:text-sm md:text-base text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€11,00</span>
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa vegana</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€11,00</span>
 </div>
 </div>
 </article>
 <!-- Wuayu Mallorquín -->
 <article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48 lg:col-span-1">
 <div class="p-lg flex flex-col gap-sm flex-grow justify-center">
-<div class="flex justify-between items-center gap-2 sm:gap-3 md:gap-md">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-on-surface">Wuayu Mallorquín</h2>
-<span class="font-medium text-xs sm:text-sm md:text-base text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€15,00</span>
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Wuayu Mallorquín</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€15,00</span>
 </div>
 </div>
 </article>
 <!-- Angus Australiano & Chuletón (Bento style small cards) -->
-<div class="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-gutter md:col-span-2 lg:col-span-1">
+<div class="flex flex-col gap-gutter md:col-span-2 lg:col-span-1">
 <article class="bg-surface-container rounded-xl p-md flex items-center justify-between border border-outline/20 hover:border-tertiary/50 transition-colors h-full">
 <div class="flex flex-col gap-xs">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-on-surface">Angus Australiano</h2>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Carne 100% Angus</p>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Angus Australiano</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Carne 100% Angus</p>
 </div>
-<span class="font-medium text-xs sm:text-sm md:text-base text-on-surface">€15,00</span>
+<span class="font-label-md text-label-md text-on-surface">€15,00</span>
 </article>
 <article class="bg-surface-container rounded-xl p-md flex items-center justify-between border border-outline/20 hover:border-tertiary/50 transition-colors h-full">
 <div class="flex flex-col gap-xs">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-on-surface">Chuletón</h2>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Sabor intenso</p>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Chuletón</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sabor intenso</p>
 </div>
-<span class="font-medium text-xs sm:text-sm md:text-base text-on-surface">€15,00</span>
+<span class="font-label-md text-label-md text-on-surface">€15,00</span>
 </article>
 </div>
 </section>
 <!-- Suplementos -->
-<section class="mt-4 sm:mt-6 md:mt-xl bg-surface-container-low rounded-xl p-lg md:p-xl border border-outline/10">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-on-surface mb-3 sm:mb-4 md:mb-lg text-center">Suplementos Disponibles</h3>
+<section class="mt-xl bg-surface-container-low rounded-xl p-lg md:p-xl border border-outline/10">
+<h3 class="font-headline-sm text-headline-sm text-primary">Suplementos Disponibles</h3>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-x-md gap-y-lg font-body-md text-body-md">
 <div class="flex justify-between items-center border-b border-outline/10 pb-2">
 <span class="text-on-surface-variant">Queso Cheddar</span>
@@ -318,7 +292,7 @@
 </section>
 </main>
 <!-- Footer -->
-<footer style="overflow-x: hidden; width: 100%; max-width: 100vw;" class="bg-surface-container dark:bg-surface-container-highest w-full rounded-t-lg mt-auto">
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full rounded-t-lg mt-auto">
 
 </footer>
 
@@ -326,30 +300,5 @@
 
 
 
-
-
-<script>
-const menuToggle = document.getElementById('menu-toggle');
-const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('sidebar-overlay');
-
-menuToggle.addEventListener('click', () => {
-    sidebar.classList.remove('translate-x-full');
-    overlay.classList.remove('opacity-0', 'invisible');
-    document.body.style.overflow = 'hidden';
-});
-
-function closeSidebar() {
-    sidebar.classList.add('translate-x-full');
-    overlay.classList.add('opacity-0', 'invisible');
-    document.body.style.overflow = 'auto';
-}
-
-overlay.addEventListener('click', closeSidebar);
-
-document.querySelectorAll('#sidebar a').forEach(link => {
-    link.addEventListener('click', closeSidebar);
-});
-</script>
 
 </body></html>

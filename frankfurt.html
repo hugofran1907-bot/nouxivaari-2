@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="light" lang="es" style="overflow-x: hidden; width: 100%; max-width: 100vw;"><head>
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Frankfurts &amp; Bocadillos - NOU XIVARRI</title>
@@ -109,175 +109,149 @@
         }
     </style>
 </head>
-<body style="width: 100%; max-width: 100vw; overflow-x: hidden; overflow-y: auto;" class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
 <!-- TopNavBar (Shared Component) -->
-<header class="overflow-x-hidden bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50">
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50">
 <div class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
-<div class="font-bold text-base sm:text-lg md:text-xl text-primary dark:text-primary-fixed-dim tracking-tight" style="color: rgb(212, 175, 55);">
+<div class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight">
                 NOU XIVARRI
             </div>
 
 
 <!-- Mobile Menu Toggle -->
-<button id="menu-toggle" class="text-primary cursor-pointer hover:opacity-70">
-<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">menu</span>
+<button class="text-primary">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </header>
-
-<!-- Sidebar Overlay -->
-<div id="sidebar-overlay" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-opacity duration-300 z-30" onclick="closeSidebar()"></div>
-
-<!-- Sidebar -->
-<aside id="sidebar" class="fixed top-0 right-0 h-screen w-64 sm:w-72 md:w-80 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto overflow-x-hidden" style="overflow-x: hidden; max-width: 100vw;">
-<div class="p-3 sm:p-4 md:p-6 border-b border-outline/10 flex justify-between items-center sticky top-0 bg-surface">
-<h2 class="font-bold text-base sm:text-lg md:text-xl text-primary">Menú</h2>
-<button onclick="closeSidebar()" class="text-primary cursor-pointer hover:opacity-70">
-<span class="material-symbols-outlined">close</span>
-</button>
-</div>
-<nav class="p-3 sm:p-4 md:p-6 space-y-3">
-<a href="index.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Inicio</a>
-<a href="frankfurt.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Frankfurts</a>
-<a href="hamburguesas.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Hamburguesas</a>
-<a href="tapas.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Tapas</a>
-<a href="ensaladas.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Ensaladas</a>
-<a href="cerveza.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Cervezas</a>
-<a href="contacto.html" class="block font-normal text-sm sm:text-base text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Contacto</a>
-</nav>
-<div class="p-3 sm:p-4 md:p-6 border-t border-outline/10 space-y-3 mt-auto">
-<a href="tel:977217333" class="block font-normal text-sm sm:text-base text-primary hover:opacity-80 transition-opacity py-2 px-4">📞 977 21 73 33</a>
-</div>
-</aside>
-
-<main class="flex-grow flex flex-col items-center w-full max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-margin py-4 sm:py-6 md:py-xl">
+<main class="flex-grow flex flex-col items-center w-full max-w-7xl mx-auto px-margin py-xl">
 <section class="w-full text-center mb-xl pt-12">
-<h1 class="font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight text-primary mb-sm"></h1><h1 class="block font-display-lg text-headline-lg-mobile md:text-display-lg text-on-background mb-sm text-center" style="font-size: 64px; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: rgb(29, 27, 25); text-align: center; outline: none !important; box-shadow: none !important;">Frankfurts y Bocadillos</h1>
-<span class="font-bold text-base sm:text-lg md:text-xl text-tertiary">Nuestras Especialidades</span>
-<p class="font-normal text-base sm:text-base md:text-lg lg:text-xl leading-relaxed text-on-surface-variant max-w-full sm:max-w-lg md:max-w-2xl mx-auto px-2 sm:px-4 mt-sm">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-sm"></h1><h1 class="hidden md:block font-display-lg text-display-lg text-on-background mb-sm" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-size: 64px; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; --tw-text-opacity: 1; color: rgb(29, 27, 25); text-align: left; outline: none !important; box-shadow: none !important;">Frankfurts y Bocadillos</h1>
+<span class="text-headline-md font-headline-md text-tertiary">Nuestras Especialidades</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-sm">
                 Auténtica tradición y sabor en cada bocado. Descubre nuestra selección de clásicos y creaciones especiales, elaborados con los mejores ingredientes.
             </p>
 </section>
 <!-- Category: CLÁSICOS -->
 <section class="w-full mb-xl">
-<h2 class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary mb-3 sm:mb-4 md:mb-lg flex items-center gap-sm"><span class="w-12 h-px bg-primary hidden md:block"></span>Frankfurts<br><span class="w-full h-px bg-outline-variant flex-grow"></span></h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-gutter">
+<h2 class="font-headline-lg text-headline-sm md:text-headline-lg text-primary mb-lg flex items-center gap-sm"><span class="w-12 h-px bg-primary hidden md:block"></span>Frankfurts<br><span class="w-full h-px bg-outline-variant flex-grow"></span></h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Item Card -->
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Frankfurt</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€3,90</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Frankfurt</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€3,90</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Clásico frankfurt alemán con pan artesano.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Clásico frankfurt alemán con pan artesano.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Frankfurt vegano</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,50</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Frankfurt vegano</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,50</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Alternativa plant-based con todo el sabor.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Alternativa plant-based con todo el sabor.</p>
 <div class="mt-sm">
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">
 <span class="material-symbols-outlined text-[14px] mr-1">eco</span> Vegano
                          </span>
 </div>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Cervela</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,20</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Cervela</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,20</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Salchicha gruesa tradicional, ahumada y sabrosa.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Salchicha gruesa tradicional, ahumada y sabrosa.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Salchichas</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,00</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Salchichas</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,00</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Doble salchicha fina del país.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Doble salchicha fina del país.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Súper Cervela</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€5,50</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Súper Cervela</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€5,50</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Nuestra cervela estrella en tamaño XL.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Nuestra cervela estrella en tamaño XL.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Salchicha picante</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,50</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Salchicha picante</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,50</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Con un toque intenso para los más atrevidos.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Con un toque intenso para los más atrevidos.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Tirolesa</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,80</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Tirolesa</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,80</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Salchicha estilo tirolés con especias seleccionadas.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Salchicha estilo tirolés con especias seleccionadas.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Chistorra de Navarra</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,90</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Chistorra de Navarra</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€4,90</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Auténtica chistorra navarra, ligeramente picante.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Auténtica chistorra navarra, ligeramente picante.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Butifarra de Pagés</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€5,20</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Butifarra de Pagés</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€5,20</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Tradición catalana en estado puro.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Tradición catalana en estado puro.</p>
 </article>
 </div>
 </section>
 <!-- Category: ESPECIALES -->
 <section class="w-full">
-<h2 class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary mb-3 sm:mb-4 md:mb-lg flex items-center gap-sm"><span class="w-12 h-px bg-primary hidden md:block"></span>Bocadillos<br><span class="w-full h-px bg-outline-variant flex-grow"></span></h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-gutter">
+<h2 class="font-headline-lg text-headline-sm md:text-headline-lg text-primary mb-lg flex items-center gap-sm"><span class="w-12 h-px bg-primary hidden md:block"></span>Bocadillos<br><span class="w-full h-px bg-outline-variant flex-grow"></span></h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Secreto Ibérico Nuevo Xivarri</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€10,50</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Secreto Ibérico Nuevo Xivarri</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€10,50</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Nuestra especialidad. Secreto ibérico cocinado a baja temperatura con pan rústico.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Nuestra especialidad. Secreto ibérico cocinado a baja temperatura con pan rústico.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Bocadillo de tiras de Calamar</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€8,50</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Bocadillo de tiras de Calamar</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€8,50</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Calamares rebozados crujientes con un toque de nuestra mayonesa especial.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Calamares rebozados crujientes con un toque de nuestra mayonesa especial.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Bocadillo de Jamón Ibérico</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€9,50</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Bocadillo de Jamón Ibérico</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€9,50</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Jamón ibérico de bellota cortado a cuchillo, pan con tomate y aceite de oliva virgen extra.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Jamón ibérico de bellota cortado a cuchillo, pan con tomate y aceite de oliva virgen extra.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Carne Mechada</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€7,90</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Carne Mechada</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€7,90</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Carne mechada jugosa y sabrosa, asada lentamente.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Carne mechada jugosa y sabrosa, asada lentamente.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Bacon brie</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€6,80</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Bacon brie</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€6,80</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Combinación perfecta de bacon crujiente y queso brie fundido.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Combinación perfecta de bacon crujiente y queso brie fundido.</p>
 </article>
 <article class="bg-surface border border-outline/20 rounded-lg p-md transition-transform hover:-translate-y-1">
 <div class="flex justify-between items-start mb-sm">
-<h3 class="font-bold text-base sm:text-lg md:text-xl text-primary">Vegetal de Remolacha</h3>
-<span class="font-medium text-xs sm:text-sm md:text-base text-primary bg-primary-fixed px-3 py-1 rounded-full">€6,50</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Vegetal de Remolacha</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full">€6,50</span>
 </div>
-<p class="font-normal text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed text-on-surface-variant">Opción fresca y saludable con hummus de remolacha y vegetales de temporada.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Opción fresca y saludable con hummus de remolacha y vegetales de temporada.</p>
 <div class="mt-sm">
 <span class="inline-flex items-center bg-tertiary text-on-tertiary font-label-md text-label-md px-2 py-1 rounded-full text-[10px]">
 <span class="material-symbols-outlined text-[14px] mr-1">eco</span> Vegano
@@ -288,7 +262,7 @@
 </section>
 </main>
 <!-- Footer (Shared Component) -->
-<footer style="overflow-x: hidden; width: 100%; max-width: 100vw;" class="bg-surface-container dark:bg-surface-container-highest w-full rounded-t-lg">
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full rounded-t-lg">
 
 </footer>
 
@@ -298,32 +272,5 @@
 
 
 
-
-
-
-
-<script>
-const menuToggle = document.getElementById('menu-toggle');
-const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('sidebar-overlay');
-
-menuToggle.addEventListener('click', () => {
-    sidebar.classList.remove('translate-x-full');
-    overlay.classList.remove('opacity-0', 'invisible');
-    document.body.style.overflow = 'hidden';
-});
-
-function closeSidebar() {
-    sidebar.classList.add('translate-x-full');
-    overlay.classList.add('opacity-0', 'invisible');
-    document.body.style.overflow = 'auto';
-}
-
-overlay.addEventListener('click', closeSidebar);
-
-document.querySelectorAll('#sidebar a').forEach(link => {
-    link.addEventListener('click', closeSidebar);
-});
-</script>
 
 </body></html>
