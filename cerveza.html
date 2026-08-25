@@ -114,7 +114,7 @@
 <a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#">NOU XIVARRI</a>
 
 
-<button class="text-primary">
+<button id="menu-toggle" class="text-primary cursor-pointer hover:opacity-70">
 <span class="material-symbols-outlined" data-icon="menu" data-weight="fill">menu</span>
 </button>
 </div>
@@ -125,6 +125,33 @@
 <h1 class="font-display-lg text-display-lg md:text-headline-lg-mobile mb-md text-primary"><h1 class="font-display-lg text-display-lg text-on-surface" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(29, 27, 25); text-align: center; outline: none !important; box-shadow: none !important;">Cervzas</h1></h1>
 <p class="font-body-lg text-body-lg text-secondary max-w-2xl">Selección Premium. Experimenta el espíritu 'Xivarri' a través de nuestra cuidada selección de cervezas artesanales y clásicos de calidad. Elaboradas con pasión, servidas con perfección.</p>
 </header>
+
+<!-- Sidebar Overlay -->
+<div id="sidebar-overlay" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-opacity duration-300 z-30" onclick="closeSidebar()"></div>
+
+<!-- Sidebar -->
+<aside id="sidebar" class="fixed top-0 right-0 h-screen w-80 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+<div class="p-6 border-b border-outline/10 flex justify-between items-center sticky top-0 bg-surface">
+<h2 class="font-headline-md text-headline-md text-primary">Menú</h2>
+<button onclick="closeSidebar()" class="text-primary cursor-pointer hover:opacity-70">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="p-6 space-y-3">
+<a href="index.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Inicio</a>
+<a href="frankfurt.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Frankfurts</a>
+<a href="hamburguesas.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Hamburguesas</a>
+<a href="tapas.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Tapas</a>
+<a href="ensaladas.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Ensaladas</a>
+<a href="cerveza.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Cervezas</a>
+<a href="contacto.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Contacto</a>
+</nav>
+<div class="p-6 border-t border-outline/10 space-y-3 mt-auto">
+<a href="tel:977217333" class="block font-body-md text-body-md text-primary hover:opacity-80 transition-opacity py-2 px-4">📞 977 21 73 33</a>
+<a href="mailto:info@xivarri.cat" class="block font-body-md text-body-md text-primary hover:opacity-80 transition-opacity py-2 px-4">✉️ info@xivarri.cat</a>
+</div>
+</aside>
+
 <!-- Bento Grid for Beers -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Beer Item: Estrella Damm -->
@@ -263,5 +290,30 @@
 
 </footer>
 
+
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('sidebar-overlay');
+
+menuToggle.addEventListener('click', () => {
+    sidebar.classList.remove('translate-x-full');
+    overlay.classList.remove('opacity-0', 'invisible');
+    document.body.style.overflow = 'hidden';
+});
+
+function closeSidebar() {
+    sidebar.classList.add('translate-x-full');
+    overlay.classList.add('opacity-0', 'invisible');
+    document.body.style.overflow = 'auto';
+}
+
+overlay.addEventListener('click', closeSidebar);
+
+document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+});
+</script>
 
 </body></html>

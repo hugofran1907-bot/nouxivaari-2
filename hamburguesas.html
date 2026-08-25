@@ -175,11 +175,38 @@
 <a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#">NOU XIVARRI</a>
 
 
-<button class="text-primary">
+<button id="menu-toggle" class="text-primary cursor-pointer hover:opacity-70">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </nav>
 </header>
+
+<!-- Sidebar Overlay -->
+<div id="sidebar-overlay" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-opacity duration-300 z-30" onclick="closeSidebar()"></div>
+
+<!-- Sidebar -->
+<aside id="sidebar" class="fixed top-0 right-0 h-screen w-80 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+<div class="p-6 border-b border-outline/10 flex justify-between items-center sticky top-0 bg-surface">
+<h2 class="font-headline-md text-headline-md text-primary">Menú</h2>
+<button onclick="closeSidebar()" class="text-primary cursor-pointer hover:opacity-70">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="p-6 space-y-3">
+<a href="index.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Inicio</a>
+<a href="frankfurt.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Frankfurts</a>
+<a href="hamburguesas.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Hamburguesas</a>
+<a href="tapas.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Tapas</a>
+<a href="ensaladas.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Ensaladas</a>
+<a href="cerveza.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Cervezas</a>
+<a href="contacto.html" class="block font-body-md text-body-md text-on-background hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-surface-container">Contacto</a>
+</nav>
+<div class="p-6 border-t border-outline/10 space-y-3 mt-auto">
+<a href="tel:977217333" class="block font-body-md text-body-md text-primary hover:opacity-80 transition-opacity py-2 px-4">📞 977 21 73 33</a>
+<a href="mailto:info@xivarri.cat" class="block font-body-md text-body-md text-primary hover:opacity-80 transition-opacity py-2 px-4">✉️ info@xivarri.cat</a>
+</div>
+</aside>
+
 <!-- Main Content -->
 <main class="flex-grow w-full max-w-7xl mx-auto px-margin py-xl flex flex-col gap-xl">
 <!-- Hero Section -->
@@ -300,5 +327,30 @@
 
 
 
+
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('sidebar-overlay');
+
+menuToggle.addEventListener('click', () => {
+    sidebar.classList.remove('translate-x-full');
+    overlay.classList.remove('opacity-0', 'invisible');
+    document.body.style.overflow = 'hidden';
+});
+
+function closeSidebar() {
+    sidebar.classList.add('translate-x-full');
+    overlay.classList.add('opacity-0', 'invisible');
+    document.body.style.overflow = 'auto';
+}
+
+overlay.addEventListener('click', closeSidebar);
+
+document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+});
+</script>
 
 </body></html>
