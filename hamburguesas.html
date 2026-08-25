@@ -1,0 +1,304 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Hamburguesas Artesanales - NOU XIVARRI</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&amp;family=Syne:wght@400..800&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#ffdad6",
+                      "primary-container": "#78746e",
+                      "on-background": "#1d1b19",
+                      "surface-bright": "#fff8f4",
+                      "tertiary-fixed": "#f3e0c2",
+                      "on-secondary-fixed": "#201b13",
+                      "on-primary-fixed-variant": "#4a4641",
+                      "on-secondary-fixed-variant": "#4c463c",
+                      "on-primary-container": "#fffbff",
+                      "inverse-surface": "#32302d",
+                      "error": "#ba1a1a",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#ede7e3",
+                      "background": "#fff8f4",
+                      "surface-container": "#f3ede8",
+                      "surface-variant": "#e7e1dd",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f9f2ee",
+                      "secondary-container": "#ece1d4",
+                      "on-surface-variant": "#4b463f",
+                      "secondary": "#655d53",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#1e1b17",
+                      "on-surface": "#1d1b19",
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "tertiary-container": "#817359",
+                      "surface": "#fff8f4",
+                      "on-tertiary-container": "#fffbff",
+                      "primary-fixed-dim": "#ccc5bf",
+                      "on-tertiary-fixed": "#241a07",
+                      "outline-variant": "#cdc5bc",
+                      "secondary-fixed": "#ece1d4",
+                      "outline": "#7c766e",
+                      "inverse-primary": "#ccc5bf",
+                      "surface-container-highest": "#e7e1dd",
+                      "primary": "#5f5b56",
+                      "on-secondary-container": "#6b6359",
+                      "on-tertiary-fixed-variant": "#51452f",
+                      "surface-tint": "#625e58",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed": "#e8e1da",
+                      "inverse-on-surface": "#f6f0eb",
+                      "surface-dim": "#dfd9d5",
+                      "tertiary-fixed-dim": "#d6c4a7",
+                      "tertiary": "#685a42",
+                      "secondary-fixed-dim": "#cfc5b9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "base": "8px",
+                      "xl": "80px",
+                      "sm": "12px",
+                      "xs": "4px",
+                      "margin": "max(24px, 5vw)",
+                      "lg": "48px",
+                      "md": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Karla"
+                      ],
+                      "body-md": [
+                              "Karla"
+                      ],
+                      "display-lg": [
+                              "Syne"
+                      ],
+                      "headline-lg-mobile": [
+                              "Syne"
+                      ],
+                      "headline-lg": [
+                              "Syne"
+                      ],
+                      "headline-sm": [
+                              "Syne"
+                      ],
+                      "headline-md": [
+                              "Syne"
+                      ],
+                      "label-md": [
+                              "Karla"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50 border-b border-outline/10">
+<nav class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
+<a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#">NOU XIVARRI</a>
+
+
+<button class="text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin py-xl flex flex-col gap-xl">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center gap-base max-w-3xl mx-auto mt-lg">
+<h1 class="font-display-lg text-display-lg text-on-surface">Hamburguesas</h1>
+
+</section>
+<!-- Menu Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-lg">
+<!-- Hamburguesa de ternera -->
+<article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
+<div class="p-lg flex flex-col gap-sm flex-grow justify-center">
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa de ternera</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
+</div>
+</div>
+</article>
+<!-- Hamburguesa de pollo -->
+<article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
+<div class="p-lg flex flex-col gap-sm flex-grow justify-center">
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa de pollo</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
+</div>
+</div>
+</article>
+<!-- Hamburguesa picante -->
+<article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
+<div class="p-lg flex flex-col gap-sm flex-grow justify-center">
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa picante</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€10,90</span>
+</div>
+</div>
+</article>
+<!-- Hamburguesa vegana -->
+<article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48">
+<div class="p-lg flex flex-col gap-sm flex-grow justify-center">
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hamburguesa vegana</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€11,00</span>
+</div>
+</div>
+</article>
+<!-- Wuayu Mallorquín -->
+<article class="bg-surface rounded-xl overflow-hidden flex flex-col group border border-outline/20 hover:border-tertiary/50 transition-colors h-48 lg:col-span-1">
+<div class="p-lg flex flex-col gap-sm flex-grow justify-center">
+<div class="flex justify-between items-center gap-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Wuayu Mallorquín</h2>
+<span class="font-label-md text-label-md text-tertiary bg-tertiary/10 px-3 py-1 rounded-full whitespace-nowrap">€15,00</span>
+</div>
+</div>
+</article>
+<!-- Angus Australiano & Chuletón (Bento style small cards) -->
+<div class="flex flex-col gap-gutter md:col-span-2 lg:col-span-1">
+<article class="bg-surface-container rounded-xl p-md flex items-center justify-between border border-outline/20 hover:border-tertiary/50 transition-colors h-full">
+<div class="flex flex-col gap-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Angus Australiano</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Carne 100% Angus</p>
+</div>
+<span class="font-label-md text-label-md text-on-surface">€15,00</span>
+</article>
+<article class="bg-surface-container rounded-xl p-md flex items-center justify-between border border-outline/20 hover:border-tertiary/50 transition-colors h-full">
+<div class="flex flex-col gap-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Chuletón</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sabor intenso</p>
+</div>
+<span class="font-label-md text-label-md text-on-surface">€15,00</span>
+</article>
+</div>
+</section>
+<!-- Suplementos -->
+<section class="mt-xl bg-surface-container-low rounded-xl p-lg md:p-xl border border-outline/10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-lg text-center">Suplementos Disponibles</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-md gap-y-lg font-body-md text-body-md">
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Queso Cheddar</span>
+<span class="text-tertiary font-label-md">+€1,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Queso de Cabra</span>
+<span class="text-tertiary font-label-md">+€1,50</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Bacon Crujiente</span>
+<span class="text-tertiary font-label-md">+€1,50</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Cebolla Caramelizada</span>
+<span class="text-tertiary font-label-md">+€1,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Huevo Frito</span>
+<span class="text-tertiary font-label-md">+€1,20</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Jalapeños</span>
+<span class="text-tertiary font-label-md">+€1,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Extra Carne</span>
+<span class="text-tertiary font-label-md">+€4,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-2">
+<span class="text-on-surface-variant">Salsa Xivarri</span>
+<span class="text-tertiary font-label-md">+€0,50</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full rounded-t-lg mt-auto">
+
+</footer>
+
+
+
+
+
+
+</body></html>
