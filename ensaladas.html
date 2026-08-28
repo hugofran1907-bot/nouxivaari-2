@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ensaladas - NOU XIVARRI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&amp;family=Karla:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary": "#655d53",
+                "on-surface": "#1d1b19",
+                "tertiary-fixed": "#f3e0c2",
+                "tertiary-container": "#817359",
+                "on-secondary": "#ffffff",
+                "outline": "#7c766e",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed-dim": "#cfc5b9",
+                "outline-variant": "#cdc5bc",
+                "surface-container-highest": "#e7e1dd",
+                "background": "#fff8f4",
+                "primary-fixed": "#e8e1da",
+                "on-secondary-container": "#6b6359",
+                "surface-bright": "#fff8f4",
+                "secondary-fixed": "#ece1d4",
+                "surface-container": "#f3ede8",
+                "error": "#ba1a1a",
+                "surface-container-low": "#f9f2ee",
+                "on-error": "#ffffff",
+                "on-primary-fixed": "#1e1b17",
+                "tertiary": "#685a42",
+                "surface-tint": "#625e58",
+                "primary-container": "#78746e",
+                "primary": "#5f5b56",
+                "secondary-container": "#ece1d4",
+                "on-tertiary-container": "#fffbff",
+                "on-primary": "#ffffff",
+                "on-tertiary-fixed-variant": "#51452f",
+                "surface-container-high": "#ede7e3",
+                "on-tertiary-fixed": "#241a07",
+                "surface-dim": "#dfd9d5",
+                "tertiary-fixed-dim": "#d6c4a7",
+                "on-secondary-fixed-variant": "#4c463c",
+                "on-surface-variant": "#4b463f",
+                "on-error-container": "#93000a",
+                "primary-fixed-dim": "#ccc5bf",
+                "on-secondary-fixed": "#201b13",
+                "inverse-primary": "#ccc5bf",
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#f6f0eb",
+                "surface": "#fff8f4",
+                "error-container": "#ffdad6",
+                "on-primary-fixed-variant": "#4a4641",
+                "on-primary-container": "#fffbff",
+                "inverse-surface": "#32302d",
+                "surface-variant": "#e7e1dd",
+                "on-background": "#1d1b19"
+        },
+        "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "sm": "12px",
+                "md": "24px",
+                "gutter": "24px",
+                "lg": "48px",
+                "base": "8px",
+                "xs": "4px",
+                "margin": "max(24px, 5vw)",
+                "xl": "80px"
+        },
+        "fontFamily": {
+                "headline-lg": [
+                        "Anybody"
+                ],
+                "body-lg": [
+                        "Anybody"
+                ],
+                "display-lg": [
+                        "Anybody"
+                ],
+                "headline-md": [
+                        "Anybody"
+                ],
+                "headline-lg-mobile": [
+                        "Anybody"
+                ],
+                "headline-sm": [
+                        "Anybody"
+                ],
+                "label-md": [
+                        "Karla"
+                ],
+                "body-md": [
+                        "Anybody"
+                ]
+        },
+        "fontSize": {
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-tertiary-fixed selection:text-on-tertiary-fixed font-body-md" data-page="ensaladas">
+<!-- Top Navigation -->
+<nav class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md docked full-width top-0 sticky border-b border-outline/10 z-50">
+<div class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
+<div class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" style="color: rgb(212, 175, 55);">
+                NOU XIVARRI
+            </div>
+<div class="relative">
+<button class="text-primary p-2" id="menuToggle" aria-label="Abrir menú" aria-haspopup="true">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div id="mainNavPanel" class="hidden right-0 top-full mt-2 w-72 max-w-[90vw] bg-surface dark:bg-surface-dim border border-outline/10 rounded-xl shadow-lg py-2 z-50 absolute"><a href="index.html" data-page="index" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Inicio</a>
+<a href="frankfurts.html" data-page="frankfurts" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Frankfurts y Bocadillos</a>
+<a href="hamburguesas.html" data-page="hamburguesas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Hamburguesas</a>
+<a href="tapas.html" data-page="tapas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Tapas</a>
+<a href="ensaladas.html" data-page="ensaladas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Ensaladas</a>
+<a href="cervezas.html" data-page="cervezas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Cervezas</a>
+<a href="contacto.html" data-page="contacto" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Contacto</a></div>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="max-w-7xl mx-auto px-margin pb-xl w-full">
+<!-- Header Section -->
+<header class="text-center flex flex-col items-center mb-lg">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-sm" style="color: rgb(212, 175, 55);">Ensaladas</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Frescura y dulzura para completar tu comida. Descubre nuestras ensaladas de temporada y postres caseros elaborados con el toque artesanal de Xivarri.</p>
+</header>
+<!-- Salads Grid -->
+<section>
+<div class="flex items-center justify-between mb-lg border-b border-outline-variant pb-base">
+<h2 class="font-headline-md text-headline-md text-primary">Ensaladas</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Salad Item -->
+<div class="rounded-[3rem] p-lg flex flex-col gap-sm border border-outline-variant shadow-sm hover:shadow-md transition-shadow bg-white">
+<div class="flex justify-between items-start gap-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">Ensalada de pollo</h3>
+<span class="font-headline-sm text-headline-sm whitespace-nowrap text-tertiary">€9,90</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Mezcla de lechugas, pollo a la plancha, crutones y salsa suave.</p>
+</div>
+<!-- Salad Item -->
+<div class="rounded-[3rem] p-lg flex flex-col gap-sm border border-outline-variant shadow-sm hover:shadow-md transition-shadow bg-white">
+<div class="flex justify-between items-start gap-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">Xivarri</h3>
+<span class="font-headline-sm text-headline-sm whitespace-nowrap text-tertiary">€9,50</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Nuestra ensalada de la casa con ingredientes de temporada y vinagreta especial.</p>
+</div>
+<!-- Salad Item -->
+<div class="rounded-[3rem] p-lg flex flex-col gap-sm border border-outline-variant shadow-sm hover:shadow-md transition-shadow bg-white">
+<div class="flex justify-between items-start gap-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">Carpaccio de tomate</h3>
+<span class="font-headline-sm text-headline-sm whitespace-nowrap text-tertiary">€9,90</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Finas láminas de tomate de temporada, aceite de oliva virgen extra y sal en escamas.</p>
+</div>
+<!-- Salad Item -->
+<div class="rounded-[3rem] p-lg flex flex-col gap-sm border border-outline-variant shadow-sm hover:shadow-md transition-shadow bg-white">
+<div class="flex justify-between items-start gap-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">Ensalada de salmón</h3>
+<span class="font-headline-sm text-headline-sm whitespace-nowrap text-tertiary">€11,00</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Salmón ahumado, aguacate, rúcula y un toque de cítricos.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full rounded-t-[2rem] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-margin py-xl w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">NOU XIVARRI</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-4">
+                    La commoció artesana. <br>
+                    El punto de encuentro en Cambrils para disfrutar de frankfurts, hamburguesas y buena cerveza.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Visítanos</h4>
+<a class="flex items-start gap-3 hover:opacity-80 transition-opacity" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+Moss%C3%A8n+Joan+Batalla%2C+4%2C+43850+Cambrils%2C+Tarragona" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Carrer de Mossèn Joan Batalla, 4<br>
+                        43850 Cambrils, Tarragona
+                    </p>
+</a>
+<a class="flex items-center gap-3 mt-2 hover:opacity-80 transition-opacity" href="tel:+34977217333">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="font-body-md text-body-md text-on-surface-variant">977 21 73 33</p>
+</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Horarios</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    Lunes a Jueves: 18:00 - 00:00<br>
+                    Viernes y Sábado: 13:00 - 01:00<br>
+                    Domingo: 13:00 - 00:00
+                </p>
+<nav class="flex flex-wrap gap-4 mt-auto font-label-md text-label-md">
+<a class="text-primary hover:text-tertiary transition-colors" href="contacto.html">Contacto</a>
+</nav>
+</div>
+</div>
+</footer>
+<script src="assets/site.js"></script>
+</body></html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tapas &amp; Ensaladas - NOU XIVARRI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .title-padding {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            overflow: visible;
+        }
+    </style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#ccc5bf",
+                "on-surface-variant": "#4b463f",
+                "inverse-surface": "#32302d",
+                "secondary": "#655d53",
+                "inverse-on-surface": "#f6f0eb",
+                "on-surface": "#1d1b19",
+                "primary": "#5f5b56",
+                "on-tertiary-container": "#fffbff",
+                "surface-dim": "#dfd9d5",
+                "surface-container-high": "#ede7e3",
+                "on-tertiary-fixed": "#241a07",
+                "surface-variant": "#e7e1dd",
+                "primary-fixed": "#e8e1da",
+                "surface": "#fff8f4",
+                "tertiary-fixed": "#f3e0c2",
+                "outline": "#7c766e",
+                "on-error-container": "#93000a",
+                "error": "#ba1a1a",
+                "secondary-fixed-dim": "#cfc5b9",
+                "surface-bright": "#fff8f4",
+                "on-primary-fixed-variant": "#4a4641",
+                "on-secondary-fixed-variant": "#4c463c",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed-variant": "#51452f",
+                "surface-container-low": "#f9f2ee",
+                "on-secondary": "#ffffff",
+                "on-primary": "#ffffff",
+                "inverse-primary": "#ccc5bf",
+                "on-primary-container": "#fffbff",
+                "surface-tint": "#625e58",
+                "background": "#fff8f4",
+                "surface-container": "#f3ede8",
+                "on-primary-fixed": "#1e1b17",
+                "tertiary-container": "#817359",
+                "tertiary": "#685a42",
+                "tertiary-fixed-dim": "#d6c4a7",
+                "surface-container-highest": "#e7e1dd",
+                "on-secondary-fixed": "#201b13",
+                "on-background": "#1d1b19",
+                "secondary-container": "#ece1d4",
+                "on-secondary-container": "#6b6359",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed": "#ece1d4",
+                "primary-container": "#78746e",
+                "outline-variant": "#cdc5bc"
+        },
+        "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "sm": "12px",
+                "xl": "80px",
+                "lg": "48px",
+                "base": "8px",
+                "md": "24px",
+                "xs": "4px",
+                "gutter": "24px",
+                "margin": "max(24px, 5vw)"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Anybody"
+                ],
+                "headline-md": [
+                        "Anybody"
+                ],
+                "label-md": [
+                        "Anybody"
+                ],
+                "headline-sm": [
+                        "Anybody"
+                ],
+                "body-md": [
+                        "Anybody"
+                ],
+                "headline-lg-mobile": [
+                        "Anybody"
+                ],
+                "display-lg": [
+                        "Anybody"
+                ],
+                "headline-lg": [
+                        "Anybody"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-tertiary-fixed selection:text-on-tertiary-fixed" data-page="tapas">
+<!-- Top Navigation -->
+<nav class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md docked full-width top-0 sticky border-b border-outline/10 z-50">
+<div class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
+<div class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim" style="color: rgb(212, 175, 55);">
+                NOU XIVARRI
+            </div>
+<div class="relative">
+<button class="text-primary p-2" id="menuToggle" aria-label="Abrir menú" aria-haspopup="true">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div id="mainNavPanel" class="hidden right-0 top-full mt-2 w-72 max-w-[90vw] bg-surface dark:bg-surface-dim border border-outline/10 rounded-xl shadow-lg py-2 z-50 absolute"><a href="index.html" data-page="index" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Inicio</a>
+<a href="frankfurts.html" data-page="frankfurts" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Frankfurts y Bocadillos</a>
+<a href="hamburguesas.html" data-page="hamburguesas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Hamburguesas</a>
+<a href="tapas.html" data-page="tapas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Tapas</a>
+<a href="ensaladas.html" data-page="ensaladas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Ensaladas</a>
+<a href="cervezas.html" data-page="cervezas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Cervezas</a>
+<a href="contacto.html" data-page="contacto" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Contacto</a></div>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="max-w-7xl mx-auto px-margin py-xl pb-[60px]">
+<!-- Header Section -->
+<header class="mb-xl text-center md:text-center">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-center" style="color: rgb(212, 175, 55);">Tapas</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto text-center mt-4 md:mx-auto">
+                Pequeños bocados, grandes emociones. Disfruta de nuestra selección de tapas artesanales y ensaladas frescas, perfectas para empezar la experiencia Xivarri.
+            </p>
+</header>
+<!-- Tapas Grid -->
+<section class="mb-xl">
+<div class="flex items-center justify-between mb-lg border-b border-outline-variant pb-base title-padding">
+<h2 class="font-headline-md text-headline-md text-primary">Tapas</h2>
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Tapa Card -->
+<article class="rounded-xl p-md border border-outline-variant flex flex-col group hover:bg-surface-container-high transition-colors duration-300 bg-white">
+<div class="flex justify-between items-start mb-sm title-padding">
+<h3 class="font-headline-sm text-headline-sm text-primary">Torreznos de Soria</h3>
+<span class="font-label-md text-label-md text-primary mt-1">€9,90</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Crujientes y sabrosos, el clásico imprescindible para empezar.</p>
+</article>
+<!-- Tapa Card -->
+<article class="rounded-xl p-md border border-outline-variant flex flex-col group hover:bg-surface-container-high transition-colors duration-300 bg-white">
+<div class="flex justify-between items-start mb-sm title-padding">
+<h3 class="font-headline-sm text-headline-sm text-primary">Nachos</h3>
+<span class="font-label-md text-label-md text-primary mt-1">€11,50</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Con queso fundido, guacamole, pico de gallo y jalapeños.</p>
+</article>
+<!-- Tapa Card -->
+<article class="rounded-xl p-md border border-outline-variant flex flex-col group hover:bg-surface-container-high transition-colors duration-300 bg-white">
+<div class="flex justify-between items-start mb-sm title-padding">
+<h3 class="font-headline-sm text-headline-sm text-primary">Croquetas</h3>
+<span class="font-label-md text-label-md text-primary mt-1">€10,50</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Artesanales y cremosas por dentro, crujientes por fuera.</p>
+</article>
+<!-- Tapa Card -->
+<article class="rounded-xl p-md border border-outline-variant flex flex-col group hover:bg-surface-container-high transition-colors duration-300 bg-white">
+<div class="flex justify-between items-start mb-sm title-padding">
+<h3 class="font-headline-sm text-headline-sm text-primary">Pollo crujiente</h3>
+<span class="font-label-md text-label-md text-primary mt-1">€9,50</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Tiras de pollo rebozado con salsa especial de la casa.</p>
+</article>
+<!-- Tapa Card -->
+<article class="rounded-xl p-md border border-outline-variant flex flex-col group hover:bg-surface-container-high transition-colors duration-300 bg-white">
+<div class="flex justify-between items-start mb-sm title-padding">
+<h3 class="font-headline-sm text-headline-sm text-primary">Alitas</h3>
+<span class="font-label-md text-label-md text-primary mt-1">€7,90</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Alitas de pollo marinadas y asadas a la perfección.</p>
+</article>
+<!-- Tapa Card -->
+<article class="rounded-xl p-md border border-outline-variant flex flex-col group hover:bg-surface-container-high transition-colors duration-300 bg-white">
+<div class="flex justify-between items-start mb-sm title-padding">
+<h3 class="font-headline-sm text-headline-sm text-primary">Tequeños</h3>
+<span class="font-label-md text-label-md text-primary mt-1">€8,90</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Palitos de queso envueltos en masa crujiente.</p>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+
+
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full rounded-t-[2rem] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-margin py-xl w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">NOU XIVARRI</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-4">
+                    La commoció artesana. <br>
+                    El punto de encuentro en Cambrils para disfrutar de frankfurts, hamburguesas y buena cerveza.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Visítanos</h4>
+<a class="flex items-start gap-3 hover:opacity-80 transition-opacity" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+Moss%C3%A8n+Joan+Batalla%2C+4%2C+43850+Cambrils%2C+Tarragona" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Carrer de Mossèn Joan Batalla, 4<br>
+                        43850 Cambrils, Tarragona
+                    </p>
+</a>
+<a class="flex items-center gap-3 mt-2 hover:opacity-80 transition-opacity" href="tel:+34977217333">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="font-body-md text-body-md text-on-surface-variant">977 21 73 33</p>
+</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Horarios</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    Lunes a Jueves: 18:00 - 00:00<br>
+                    Viernes y Sábado: 13:00 - 01:00<br>
+                    Domingo: 13:00 - 00:00
+                </p>
+<nav class="flex flex-wrap gap-4 mt-auto font-label-md text-label-md">
+<a class="text-primary hover:text-tertiary transition-colors" href="contacto.html">Contacto</a>
+</nav>
+</div>
+</div>
+</footer>
+<script src="assets/site.js"></script>
+</body></html>

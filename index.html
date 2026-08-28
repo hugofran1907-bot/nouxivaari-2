@@ -1,0 +1,315 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>NOU XIVARRI - Frankfurt-Cerveseria en Cambrils</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&amp;family=Karla:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#ccc5bf",
+                "on-surface-variant": "#4b463f",
+                "inverse-surface": "#32302d",
+                "secondary": "#655d53",
+                "inverse-on-surface": "#f6f0eb",
+                "on-surface": "#1d1b19",
+                "primary": "#5f5b56",
+                "on-tertiary-container": "#fffbff",
+                "surface-dim": "#dfd9d5",
+                "surface-container-high": "#ede7e3",
+                "on-tertiary-fixed": "#241a07",
+                "surface-variant": "#e7e1dd",
+                "primary-fixed": "#e8e1da",
+                "surface": "#fff8f4",
+                "tertiary-fixed": "#f3e0c2",
+                "outline": "#7c766e",
+                "on-error-container": "#93000a",
+                "error": "#ba1a1a",
+                "secondary-fixed-dim": "#cfc5b9",
+                "surface-bright": "#fff8f4",
+                "on-primary-fixed-variant": "#4a4641",
+                "on-secondary-fixed-variant": "#4c463c",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed-variant": "#51452f",
+                "surface-container-low": "#f9f2ee",
+                "on-secondary": "#ffffff",
+                "on-primary": "#ffffff",
+                "inverse-primary": "#ccc5bf",
+                "on-primary-container": "#fffbff",
+                "surface-tint": "#625e58",
+                "background": "#fff8f4",
+                "surface-container": "#f3ede8",
+                "on-primary-fixed": "#1e1b17",
+                "tertiary-container": "#817359",
+                "tertiary": "#685a42",
+                "tertiary-fixed-dim": "#d6c4a7",
+                "surface-container-highest": "#e7e1dd",
+                "on-secondary-fixed": "#201b13",
+                "on-background": "#1d1b19",
+                "secondary-container": "#ece1d4",
+                "on-secondary-container": "#6b6359",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed": "#ece1d4",
+                "primary-container": "#78746e",
+                "outline-variant": "#cdc5bc"
+        },
+        "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "sm": "12px",
+                "xl": "80px",
+                "lg": "48px",
+                "base": "8px",
+                "md": "24px",
+                "xs": "4px",
+                "gutter": "24px",
+                "margin": "max(24px, 5vw)"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Karla"
+                ],
+                "headline-md": [
+                        "Anybody"
+                ],
+                "label-md": [
+                        "Karla"
+                ],
+                "headline-sm": [
+                        "Anybody"
+                ],
+                "body-md": [
+                        "Karla"
+                ],
+                "headline-lg-mobile": [
+                        "Anybody"
+                ],
+                "display-lg": [
+                        "Anybody"
+                ],
+                "headline-lg": [
+                        "Anybody"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased" data-page="index">
+<!-- TopNavBar (JSON Anchor) -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md font-headline-sm text-headline-sm font-label-md text-label-md docked full-width top-0 sticky border-b border-outline/10 flat no shadows z-50">
+<div class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
+<a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#" style="color: rgb(212, 175, 55);">NOU XIVARRI</a>
+<div class="relative">
+<button class="text-primary" id="menuToggle" aria-label="Abrir menú" aria-haspopup="true">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+<div id="mainNavPanel" class="hidden right-0 top-full mt-2 w-72 max-w-[90vw] bg-surface dark:bg-surface-dim border border-outline/10 rounded-xl shadow-lg py-2 z-50 absolute"><a href="index.html" data-page="index" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Inicio</a>
+<a href="frankfurts.html" data-page="frankfurts" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Frankfurts y Bocadillos</a>
+<a href="hamburguesas.html" data-page="hamburguesas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Hamburguesas</a>
+<a href="tapas.html" data-page="tapas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Tapas</a>
+<a href="ensaladas.html" data-page="ensaladas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Ensaladas</a>
+<a href="cervezas.html" data-page="cervezas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Cervezas</a>
+<a href="contacto.html" data-page="contacto" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Contacto</a></div>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center px-margin py-xl overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="NOU XIVARRI terrace" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC42jdP0AnsOPydEEFiMTTnyiTJPPF4Y1FKKzl_nkFMcEQMvAfQYLXLyTmKA_yG9CHdrsRKKtEXkrju8OP5ACBjhr0t-tiRmGQSIwXvKfifnxM88OS7syzBILEPnSHQxobXsemxuW8GbJYUEjVPHM0W06TsEsHIHcMaZaVzfZ5nFWxz-yUrg8ZDBCI608KRxj-FTz0y7PhgIOx82GW-tt4Nntl1KFtBzw9ph2Hrd8C3xTMpjMCK0EfAQsLi-4j1vMQO3h8">
+<div class="absolute inset-0 bg-surface/60 backdrop-blur-sm"></div></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center gap-md mt-xl">
+<span class="bg-tertiary text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-widest inline-block mb-4 shadow-sm">Cambrils</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-base text-primary" style="color: rgb(255, 215, 0);">NOU XIVARRI <br><span class="font-headline-lg text-on-surface-variant">Frankfurt &amp; Cerveseria</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">Frankfurts artesanales, hamburguesas premium y cervezas seleccionadas en el corazón de Cambrils. La commoció artesana te espera.</p>
+<div class="flex flex-wrap justify-center gap-sm">
+<a class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-primary-container transition-colors duration-300 shadow-sm scale-95 active:scale-90 inline-flex items-center gap-2" href="#menu">
+                        Ver menú <span class="material-symbols-outlined text-sm">arrow_downward</span>
+</a>
+<a class="border border-primary text-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-surface-variant transition-colors duration-300 shadow-sm scale-95 active:scale-90 inline-flex items-center gap-2 bg-transparent" href="cervezas.html">
+                        Nuestras cervezas <span class="material-symbols-outlined text-sm">sports_bar</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Bienvenido a Xivarri (About) - Asymmetric Layout -->
+<section class="py-xl px-margin bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 flex flex-col gap-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Bienvenido a <span class="text-tertiary italic">Xivarri</span></h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Quiénes Somos</p>
+<div class="w-16 h-1 bg-primary rounded-full mb-4"></div>
+<p class="font-body-lg text-body-lg text-on-background">Somos más que una frankfurtería. Somos un punto de encuentro para los amantes de la buena cerveza y la comida honesta. Elaboramos nuestros platos con ingredientes de primera calidad, respetando la tradición pero aportando nuestro toque rebelde y artesanal.</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Disfruta de una selección cuidada de cervezas artesanales locales e internacionales, maridadas a la perfección con nuestras hamburguesas premium y frankfurts clásicos.</p>
+</div>
+<div class="md:col-span-7 relative h-[500px] rounded-DEFAULT overflow-hidden">
+<img alt="" class="w-full h-full object-cover rounded-DEFAULT absolute inset-0" data-alt="A stylish, brightly lit photograph of the NOU XIVARRI gastro-pub interior in Cambrils. The space features clean lines, light wood furnishings (#F0E5D8), and warm ambient lighting. People are casually enjoying craft beers and gourmet food. The aesthetic is modern, minimalist, yet inviting, capturing the experimental 'Xivarri' essence of artisanal craft culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy1vOqL8GTZtGqq-6k7kz7JQDFbLXIf-iSxbfljeR0_3M2dEdUMA-1r8LPOp09V6YEKyRU3MPI6N-HolxhzLrRhj0odSUTLgsbzwwu_-4C7eKYu40Qw8FMkhvTY1RuLIFkKcbUBULN2K_sI3qd00pgunsGjgEXBsSdy8mrBgQGvdyZWDaNN_BVDdlfYtt7_Sfqiq3WJMkpe_URT10-UxxRMg51laXSZ_soj7BSIBKzwQCsq0Y9o3bd9ofjy0y8I-DOGCY">
+<div class="absolute bottom-6 right-6 bg-surface/90 backdrop-blur-md p-6 rounded-lg max-w-xs shadow-lg border border-outline/10">
+<div class="flex items-center gap-4 mb-2">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Artesanía Local</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Ingredientes de proximidad y recetas caseras preparadas al momento.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Specials - Bento Grid -->
+<section class="py-xl px-margin bg-background" id="menu">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg mb-2 text-primary">Especialidades</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Los favoritos de la casa</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter auto-rows-[300px]">
+<!-- Frankfurt Tradicional -->
+<a href="frankfurts.html" class="md:col-span-2 relative rounded-lg overflow-hidden group block cursor-pointer">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A mouth-watering, high-resolution close-up of a traditional gourmet frankfurt in a fresh artisanal bun, topped with classic condiments. The presentation is elevated and minimalist, sitting on a clean, light (#FEFDFB) ceramic plate. The lighting highlights the textures of the crispy bread and the juicy sausage, embodying premium fast-casual dining." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtjvvucoLifRRv0woNgj_6_kEVWrbFjFnaOEvo3XhR4Lf3u-opHr8-RMY_xt7VoA4azgWN6PBCmdqTPGaj3HECc9K-5IkrkbIN93qKpJae2ZZ5Q4PsoecKNgP0zrSCWcJV3On88M1WD-sT9TygJC0jhEuHWFIG9TGmlMpHlP_u1FTeKeb5zpPhZwg8VmDhQK7Gw9m0yMGRIakeasL8Zhfyv5R3s2YMwa-cI6nsCPNR6oyItvydi4dplJLDXO9v2LIXOXk">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent flex flex-col justify-end p-8">
+<div class="flex justify-between items-end">
+<div>
+<span class="bg-tertiary text-on-tertiary font-label-md text-label-md px-3 py-1 rounded-full text-xs mb-3 inline-block">Clásico</span>
+<h3 class="font-headline-md text-headline-md text-white">Frankfurt Tradicional</h3>
+<p class="font-body-md text-body-md text-white/80 mt-2">Salchicha artesanal, pan de Viena, mostaza suave y kétchup casero.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-white bg-primary/80 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">€3,90</span>
+</div>
+</div>
+</a>
+<!-- Hamburguesa de Ternera -->
+<a href="hamburguesas.html" class="md:col-span-1 relative rounded-lg overflow-hidden group block cursor-pointer"><img alt="Hamburguesa de Ternera" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeQHuzIS08QTjTL65tXLlOg-JELLP19o2jfyzrCm0_OkG1bl1iyHYqGRk7H3idKh23jJqWPQrYgj4X_ggFaA5HnNI2i7hcDFf-48XQ0KNtys5aeBWtA_jTTVWRZ-8vC0FV3d_xQ_QF9Bn5hBLHpxQeFCV3NuUgIOqb2-ey3F7m8HvPB7HfFaUkG3t-2HpSnpqchTwJ174GRYX2PZh_2Z9bmC47x2b6Bn9L8ONQr__9mkxEBtjqPr_UGu537aAy-FexGRQ"><div class="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-on-background/90 to-transparent"><div class="flex justify-between items-start mb-2"><h3 class="font-headline-sm text-headline-sm text-white">Hamburguesa de Ternera</h3><span class="font-headline-sm text-headline-sm text-tertiary">€10,90</span></div><p class="font-body-md text-body-md text-white/80 text-sm">200g de ternera local, queso cheddar madurado, cebolla caramelizada.</p></div></a>
+<!-- Cervezas Premium -->
+<a href="cervezas.html" class="md:col-span-3 bg-surface-container-high rounded-lg p-8 flex flex-col md:flex-row items-center justify-between border border-outline/10 hover:border-primary/30 transition-colors cursor-pointer" id="cervezas">
+<div class="flex items-center gap-6 mb-6 md:mb-0">
+<div class="w-20 h-20 bg-tertiary rounded-full flex items-center justify-center text-on-tertiary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">sports_bar</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Cervezas Premium</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-2">Explora nuestra pizarra rotativa. IPAs atrevidas, Stouts profundas y Lagers refrescantes, seleccionadas cuidadosamente de los mejores maestros cerveceros.</p>
+</div>
+</div>
+<span class="border-2 border-primary text-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary hover:text-on-primary transition-colors duration-300 whitespace-nowrap inline-block">
+                            Ver Carta de Cervezas
+                        </span>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer (JSON Anchor) -->
+<footer class="bg-surface-container dark:bg-surface-container-highest text-on-surface dark:text-on-surface font-body-md text-body-md font-label-md text-label-md font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim full-width rounded-t-lg bg-surface-container-low dark:bg-surface-container-highest flat no shadows mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-margin py-xl w-full max-w-7xl mx-auto">
+<!-- Brand & Copyright -->
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">NOU XIVARRI</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-4">
+                    La commoció artesana. <br>
+                    El punto de encuentro en Cambrils para disfrutar de frankfurts, hamburguesas y buena cerveza.
+                </p>
+</div>
+<!-- Practical Info -->
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Visítanos</h4>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Carrer de Mossèn Joan Batalla, 4<br>
+                        43850 Cambrils, Tarragona
+                    </p>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="font-body-md text-body-md text-on-surface-variant">977 21 73 33</p>
+</div>
+</div>
+<!-- Schedule & Links -->
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Horarios</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    Lunes a Jueves: 18:00 - 00:00<br>
+                    Viernes y Sábado: 13:00 - 01:00<br>
+                    Domingo: 13:00 - 00:00
+                </p>
+<nav class="flex flex-wrap gap-4 mt-auto">
+</nav>
+</div>
+</div>
+</footer>
+<script src="assets/site.js"></script>
+</body></html>

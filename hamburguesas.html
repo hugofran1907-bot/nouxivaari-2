@@ -1,0 +1,336 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Hamburguesas Artesanales - NOU XIVARRI</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary": "#655d53",
+                "on-surface": "#1d1b19",
+                "tertiary-fixed": "#f3e0c2",
+                "tertiary-container": "#817359",
+                "on-secondary": "#ffffff",
+                "outline": "#7c766e",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed-dim": "#cfc5b9",
+                "outline-variant": "#cdc5bc",
+                "surface-container-highest": "#e7e1dd",
+                "background": "#fff8f4",
+                "primary-fixed": "#e8e1da",
+                "on-secondary-container": "#6b6359",
+                "surface-bright": "#fff8f4",
+                "secondary-fixed": "#ece1d4",
+                "surface-container": "#f3ede8",
+                "error": "#ba1a1a",
+                "surface-container-low": "#f9f2ee",
+                "on-error": "#ffffff",
+                "on-primary-fixed": "#1e1b17",
+                "tertiary": "#685a42",
+                "surface-tint": "#625e58",
+                "primary-container": "#78746e",
+                "primary": "#5f5b56",
+                "secondary-container": "#ece1d4",
+                "on-tertiary-container": "#fffbff",
+                "on-primary": "#ffffff",
+                "on-tertiary-fixed-variant": "#51452f",
+                "surface-container-high": "#ede7e3",
+                "on-tertiary-fixed": "#241a07",
+                "surface-dim": "#dfd9d5",
+                "tertiary-fixed-dim": "#d6c4a7",
+                "on-secondary-fixed-variant": "#4c463c",
+                "on-surface-variant": "#4b463f",
+                "on-error-container": "#93000a",
+                "primary-fixed-dim": "#ccc5bf",
+                "on-secondary-fixed": "#201b13",
+                "inverse-primary": "#ccc5bf",
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#f6f0eb",
+                "surface": "#fff8f4",
+                "error-container": "#ffdad6",
+                "on-primary-fixed-variant": "#4a4641",
+                "on-primary-container": "#fffbff",
+                "inverse-surface": "#32302d",
+                "surface-variant": "#e7e1dd",
+                "on-background": "#1d1b19"
+        },
+        "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "sm": "12px",
+                "md": "24px",
+                "gutter": "24px",
+                "lg": "48px",
+                "base": "8px",
+                "xs": "4px",
+                "margin": "max(24px, 5vw)",
+                "xl": "80px"
+        },
+        "fontFamily": {
+                "headline-lg": [
+                        "Anybody"
+                ],
+                "body-lg": [
+                        "Anybody"
+                ],
+                "display-lg": [
+                        "Anybody"
+                ],
+                "headline-md": [
+                        "Anybody"
+                ],
+                "headline-lg-mobile": [
+                        "Anybody"
+                ],
+                "headline-sm": [
+                        "Anybody"
+                ],
+                "label-md": [
+                        "Anybody"
+                ],
+                "body-md": [
+                        "Anybody"
+                ]
+        },
+        "fontSize": {
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md selection:bg-tertiary selection:text-on-tertiary" data-page="hamburguesas">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md w-full top-0 sticky z-50 border-b border-outline/10">
+<nav class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
+<a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight" href="#" style="color: rgb(212, 175, 55);">NOU XIVARRI</a>
+<div class="relative">
+<button class="text-primary hover:text-tertiary transition-colors" id="menuToggle" aria-label="Abrir menú" aria-haspopup="true">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+<div id="mainNavPanel" class="hidden right-0 top-full mt-2 w-72 max-w-[90vw] bg-surface dark:bg-surface-dim border border-outline/10 rounded-xl shadow-lg py-2 z-50 absolute"><a href="index.html" data-page="index" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Inicio</a>
+<a href="frankfurts.html" data-page="frankfurts" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Frankfurts y Bocadillos</a>
+<a href="hamburguesas.html" data-page="hamburguesas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Hamburguesas</a>
+<a href="tapas.html" data-page="tapas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Tapas</a>
+<a href="ensaladas.html" data-page="ensaladas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Ensaladas</a>
+<a href="cervezas.html" data-page="cervezas" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Cervezas</a>
+<a href="contacto.html" data-page="contacto" class="nav-link block px-5 py-3 font-body-md text-body-md text-on-surface hover:bg-surface-container transition-colors">Contacto</a></div>
+</div>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin py-xl flex flex-col gap-xl">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center gap-base max-w-3xl mx-auto mt-lg mb-8">
+<h1 class="font-display-lg text-display-lg tracking-tight font-medium" style="color: rgb(212, 175, 55);">Hamburguesas</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">Nuestras hamburguesas artesanales, preparadas al momento con ingredientes frescos de la más alta calidad.</p>
+</section>
+<!-- Menu Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+<!-- Hamburguesa de ternera -->
+<article class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col gap-4 group shadow-sm transition-all duration-300">
+<div class="flex justify-between items-start gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">Hamburguesa de ternera</h2>
+<span class="font-headline-sm text-headline-sm text-tertiary whitespace-nowrap mt-2">€10,90</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto leading-relaxed">Clásica hamburguesa de ternera con nuestro toque especial.</p>
+</article>
+<!-- Hamburguesa de pollo -->
+<article class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col gap-4 group shadow-sm transition-all duration-300">
+<div class="flex justify-between items-start gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">Hamburguesa de pollo</h2>
+<span class="font-headline-sm text-headline-sm text-tertiary whitespace-nowrap mt-2">€10,90</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto leading-relaxed">Pechuga de pollo a la parrilla con lechuga fresca y tomate.</p>
+</article>
+<!-- Hamburguesa picante -->
+<article class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col gap-4 group shadow-sm transition-all duration-300">
+<div class="flex justify-between items-start gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">Hamburguesa picante</h2>
+<span class="font-headline-sm text-headline-sm text-tertiary whitespace-nowrap mt-2">€10,90</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto leading-relaxed">Con salsa sriracha, jalapeños y queso pepper jack.</p>
+</article>
+<!-- Hamburguesa vegana -->
+<article class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col gap-4 group shadow-sm transition-all duration-300">
+<div class="flex justify-between items-start gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">Hamburguesa vegana</h2>
+<span class="font-headline-sm text-headline-sm text-tertiary whitespace-nowrap mt-2">€11,00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto leading-relaxed">Medallón plant-based con mayonesa vegana y vegetales.</p>
+</article>
+<!-- Wuayu Mallorquín -->
+<article class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col gap-4 group shadow-sm transition-all duration-300">
+<div class="flex justify-between items-start gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">Wuayu Mallorquín</h2>
+<span class="font-headline-sm text-headline-sm text-tertiary whitespace-nowrap mt-2">€15,00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto leading-relaxed">Exclusiva carne de Wagyu criado en Mallorca, calidad premium.</p>
+</article>
+<!-- Angus Australiano & Chuletón -->
+<div class="flex flex-col gap-8">
+<article class="bg-surface-container-lowest rounded-[2rem] p-6 flex flex-col justify-center shadow-sm transition-all duration-300 h-full">
+<div class="flex justify-between items-start gap-2 mb-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium">Angus Australiano</h2>
+<span class="font-headline-sm text-headline-sm text-tertiary mt-2">€15,00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Carne 100% Angus importada</p>
+</article>
+<article class="bg-surface-container-lowest rounded-[2rem] p-6 flex flex-col justify-center shadow-sm transition-all duration-300 h-full">
+<div class="flex justify-between items-start gap-2 mb-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium">Chuletón</h2>
+<span class="font-headline-sm text-headline-sm text-tertiary mt-2">€15,00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Sabor intenso y maduración perfecta</p>
+</article>
+</div>
+</section>
+<!-- Suplementos -->
+<section class="mt-24 bg-surface-container-lowest rounded-[3rem] p-12 md:p-16 shadow-sm">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-12 text-center">Suplementos Disponibles</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-8 font-body-lg text-body-lg">
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Queso Cheddar</span>
+<span class="text-tertiary font-headline-sm">+€1,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Queso de Cabra</span>
+<span class="text-tertiary font-headline-sm">+€1,50</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Bacon Crujiente</span>
+<span class="text-tertiary font-headline-sm">+€1,50</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Cebolla Caramelizada</span>
+<span class="text-tertiary font-headline-sm">+€1,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Huevo Frito</span>
+<span class="text-tertiary font-headline-sm">+€1,20</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Jalapeños</span>
+<span class="text-tertiary font-headline-sm">+€1,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Extra Carne</span>
+<span class="text-tertiary font-headline-sm">+€4,00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/20 pb-4 hover:border-tertiary/50 transition-colors">
+<span class="text-on-surface font-medium leading-relaxed">Salsa Xivarri</span>
+<span class="text-tertiary font-headline-sm">+€0,50</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+
+
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full rounded-t-[2rem] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-margin py-xl w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">NOU XIVARRI</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-4">
+                    La commoció artesana. <br>
+                    El punto de encuentro en Cambrils para disfrutar de frankfurts, hamburguesas y buena cerveza.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Visítanos</h4>
+<a class="flex items-start gap-3 hover:opacity-80 transition-opacity" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+Moss%C3%A8n+Joan+Batalla%2C+4%2C+43850+Cambrils%2C+Tarragona" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Carrer de Mossèn Joan Batalla, 4<br>
+                        43850 Cambrils, Tarragona
+                    </p>
+</a>
+<a class="flex items-center gap-3 mt-2 hover:opacity-80 transition-opacity" href="tel:+34977217333">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="font-body-md text-body-md text-on-surface-variant">977 21 73 33</p>
+</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-background mb-2">Horarios</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    Lunes a Jueves: 18:00 - 00:00<br>
+                    Viernes y Sábado: 13:00 - 01:00<br>
+                    Domingo: 13:00 - 00:00
+                </p>
+<nav class="flex flex-wrap gap-4 mt-auto font-label-md text-label-md">
+<a class="text-primary hover:text-tertiary transition-colors" href="contacto.html">Contacto</a>
+</nav>
+</div>
+</div>
+</footer>
+<script src="assets/site.js"></script>
+</body></html>
